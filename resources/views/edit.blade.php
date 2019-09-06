@@ -4,7 +4,7 @@
         <div class="col-md-8">
             <form action="{{route('editAction')}}" method="post">
                 {{csrf_field()}}
-                <input type="hidden" name="criteria" value="$data->id">
+                <input type="hidden" name="criteria" value="{{$data->id}}">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="enter you name" value="{{$data->name}}">
